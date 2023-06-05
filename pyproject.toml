@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "honkairail"
+version = "1.0.0"
+description = "A simple and convenient model for Mihoyo API which is complemented by other resources"
+authors = ["None"]
+
+readme = 'README.md'  # Markdown files are supported
+
+repository = "https://github.com/DEViantUA/HonkaiRail"
+homepage = "https://github.com/DEViantUA/HonkaiRail"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

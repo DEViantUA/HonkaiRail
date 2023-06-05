@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: honkairail
+Version: 1.0.0
+Summary: A simple and convenient model for Mihoyo API which is complemented by other resources
+Home-page: https://github.com/DEViantUA/HonkaiRail
+Author: None
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/DEViantUA/HonkaiRail
+Description-Content-Type: text/markdown
+
 # HonkaiRail
  A simple and convenient model for Mihoyo API which is complemented by other resources
 
@@ -98,4 +112,5 @@ asyncio.run(main(700649319, "en"))
 |  português  |     pt  | 한국어      |     kr  | deutsch    |     de  |
 |  日本語      |     jp  | 中文        |     zh  | español    |     es  |
 |  中文        |     zh  | Indonesian |     id  | français   |     fr  |
+
 
