@@ -13,8 +13,9 @@ pip install honkairail
 from honkairail import starrailapi
 import asyncio
 
+#The sample code below matches version 1 (v = 1), but you can set it to 1 or 2. The second version is newer and contains a bit more data.
 async def main(uid,lang):
-    r = starrailapi.StarRailApi(lang)
+    r = starrailapi.StarRailApi(lang, v = 1)
     data = await r.get_full_data(uid)
     print(data)
 
@@ -37,7 +38,6 @@ async def main(uid,lang):
     print(f"Level: {data.player.level}")
     print(f"World Level: {data.player.worldlevel}")
     
-    print(f"Birthday: {data.player.birthday}")
     print(f"Friends: {data.player.friends}")
 
     print(f"Pass Area Progress: {data.player.pass_area_progress}")
