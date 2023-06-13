@@ -3,7 +3,7 @@ import asyncio
 
 
 async def main(uid,lang):
-    r = starrailapi.StarRailApi(lang)
+    r = starrailapi.StarRailApi(lang, v = 1)
     data = await r.get_full_data(uid)
     print("====Player====")
     print(f"Name: {data.player.name}")
