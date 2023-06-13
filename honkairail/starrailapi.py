@@ -1,11 +1,14 @@
-from .src.tools import api, modal,utilities
+from .src.tools import api, modalV1,utilities
 
 class StarRailApi():
-    def __init__(self,lang) -> None:
+    def __init__(self,lang, v = 1) -> None:
         self.lang = lang
+        if not v in [1,2]:
+            v = 1
+        self.v = v
 
     async def get_user(self,uid):
-        data = await api.get_data(self.lang,uid)
+        data = await api.get_data(self.lang,uid,self.v)
         return data
     
     async def get_user_profile(self,uid):
@@ -13,7 +16,7 @@ class StarRailApi():
         return data
     
     async def get_full_data(self,uid):
-        data = await api.get_full(self.lang,uid)
+        data = await api.get_full(self.lang,uid,self.v)
         return data
     
     async def get_light_cone_info(self, instance):
@@ -25,4 +28,4 @@ class StarRailApi():
             "name": patch["name"],
             "url": icon["url"]
         }
-        return modal.LightConeInfo(**data)
+        return modalV1.LightConeInfo(**data)

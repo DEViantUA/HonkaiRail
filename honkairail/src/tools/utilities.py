@@ -24,6 +24,18 @@ def get_stats_light_cone(string, lvl):
 
     return result_dict.get(str(lvl), {"atk": 0, "hp": 0, "defense": 0})
 
+def hex_to_rgba(hex_code):
+    hex_code = hex_code.strip('#')
+    
+    red = int(hex_code[0:2], 16)
+    green = int(hex_code[2:4], 16)
+    blue = int(hex_code[4:6], 16)
+    
+    alpha = 255 
+    
+    return red, green, blue, alpha
+
+
 def convert_date(date):
     date = str(date)
     month = date[:-2].zfill(2)
