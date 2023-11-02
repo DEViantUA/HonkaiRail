@@ -36,3 +36,4 @@ asyncio.run(main(700649319,"en"))
 |  português  |     pt  | 한국어      |     kr  | deutsch    |     de  |
 |  日本語      |     jp  | 中文        |     cn  | español    |     es  |
 |  中文        |     zh  | Indonesian |     id  | français   |     fr  |
+| Український | ua |
